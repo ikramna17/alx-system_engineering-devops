@@ -1,0 +1,4 @@
+word = "Best School"
+
+for a in range(10):
+      print(word)
