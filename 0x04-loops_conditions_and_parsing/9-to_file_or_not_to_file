@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# alx school file checker
+
+a="school"
+
+# checks if a exists
+if [ -e "$a" ]; then
+
+  echo "school a exists"
+
+  # checks if a is empty
+  if [ ! -s "$a" ]; then
+    echo "school file is empty"
+
+    # checks if a is a regular file
+    if [ -f "$a" ]; then
+      echo "school is a regular file"
+    fi  
+
+  else
+
+    echo "school file is not empty"
+
+    # checks if a is a regular file
+    if [ -f "$a" ]; then
+      echo "school is a regular file"
+    fi  
+  
+  fi
+
+else
+  
+  echo "school file does not exist"
+
+fi
