@@ -1,8 +1,5 @@
-onfigures the default Nginx configuration file
+#!/usr/bin/env bash
+# run apache on designated container
 
-# remove the default Nginx configuration file
-rm /ect/nginx/sites-enabled/default
-# Configure Nginx to listen on port 80 for all active IPv4 IPs
-ln -s /ect/nginx/sites-available/default /etc/nginx/sites-enabled/default
-# restart nginx
-service nginx restart
+echo "ServerName localhost" >> /etc/apache2.conf
+service apache2 start
